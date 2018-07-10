@@ -56,7 +56,7 @@
 	<head>
 		<title>RaspberryPints</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta http-equiv="refresh" content="600">
+
 
 		<!-- Set location of Cascading Style Sheet -->
 		<link rel="stylesheet" type="text/css" href="style.css">
@@ -71,6 +71,7 @@
 	<body>
     	<div class="bodywrapper">
         	<!-- Header with Brewery Logo and Project Name -->
+	    <meta http-equiv="refresh" content="600">
             <div class="header clearfix">
                 <div class="HeaderLeft">
 					<?php if($config[ConfigNames::UseHighResolution]) { ?>			
