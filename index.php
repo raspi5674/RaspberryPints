@@ -56,6 +56,7 @@
 	<head>
 		<title>RaspberryPints</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="refresh" content="600">
 
 		<!-- Set location of Cascading Style Sheet -->
 		<link rel="stylesheet" type="text/css" href="style.css">
@@ -80,13 +81,6 @@
                 </div>
                 <div class="HeaderCenter">
                     <h1 id="HeaderTitle"><? echo $config[ConfigNames::HeaderText]; ?></h1>
-                </div>
-                <div class="HeaderRight">
-					<?php if($config[ConfigNames::UseHighResolution]) { ?>			
-						<a href="http://www.raspberrypints.com"><img src="img/RaspberryPints-4k.png" height="200" alt=""></a>
-					<?php } else { ?>
-						<a href="http://www.raspberrypints.com"><img src="img/RaspberryPints.png" height="100" alt=""></a>
-					<?php } ?>
                 </div>
             </div>
             <!-- End Header Bar -->
