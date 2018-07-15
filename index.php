@@ -148,7 +148,9 @@
 											<div class="srm-stroke"></div> 
 										</div>
 										
-										<h2><?php echo $beer['srm']; ?> SRM</h2>
+										<?php if( $beer['srm'] < 0 ){ ?>
+											<h2><?php echo $beer['srm']; ?> SRM</h2>
+										<?php } ?>
 									</td>
 								<?php } ?>
 							
