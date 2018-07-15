@@ -1,6 +1,5 @@
 
-// Commenting for my own edification.
-// This whole first php line just gets data from the sql database so that it can be displayed
+
 <?php
 	require_once __DIR__.'/includes/config_names.php';
 
