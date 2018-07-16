@@ -90,7 +90,7 @@ class TapManager{
 		$sql="UPDATE taps SET active = 0, modifiedDate = NOW() WHERE id = $id";
 		mysql_query($sql);
 		
-		$sql="UPDATE kegs k, taps t SET k.kegStatusCode = 'NEEDS_CLEANING' WHERE t.kegId = k.id AND t.Id = $id";
+		$sql="UPDATE kegs k, taps t SET k.kegStatusCode = 'CLEAN' WHERE t.kegId = k.id AND t.Id = $id";
 		mysql_query($sql);
 	}
 }
