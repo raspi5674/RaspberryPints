@@ -179,12 +179,6 @@
 									</td>
 								<?php } ?>
 							
-								<td class="name">
-									<h1><?php echo $beer['beername']; ?></h1>
-									<h2 class="subhead"><?php echo $beer['style']; ?></h2>
-									<p><?php echo $beer['notes']; ?></p>
-								</td>
-							
 								<?php if(($config[ConfigNames::ShowAbvCol]) && ($config[ConfigNames::ShowAbvImage])){ ?>
 									<td class="abv">
 										<h3><?php
@@ -243,6 +237,13 @@
 										<h2><?php echo number_format($abv, 1, '.', ',')."%"; ?> ABV</h2>
 									</td>
 								<?php } ?>
+								
+								<td class="name">
+									<h1><?php echo $beer['beername']; ?></h1>
+									<h2 class="subhead"><?php echo $beer['style']; ?></h2>
+									<p><?php echo $beer['notes']; ?></p>
+								</td>
+							
 								
 								<?php if($config[ConfigNames::ShowKegCol]){ ?>
 									<td class="keg">
