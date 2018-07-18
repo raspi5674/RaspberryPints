@@ -107,15 +107,15 @@
 							</th>
 						<?php } ?>
 						
-						<th class="name">
-							BEER NAME &nbsp; & &nbsp; STYLE<hr>TASTING NOTES
-						</th>
-						
 						<?php if($config[ConfigNames::ShowAbvCol]){ ?>
 							<th class="abv">				
 								CALORIES<hr>ALCOHOL
 							</th>
 						<?php } ?>
+						
+						<th class="name">
+							BEER NAME &nbsp; & &nbsp; STYLE<hr>TASTING NOTES
+						</th>
 						
 						<?php if($config[ConfigNames::ShowKegCol]){ ?>
 							<th class="keg">
