@@ -103,7 +103,7 @@
 						
 						<?php if($config[ConfigNames::ShowIbuCol]){ ?>
 							<th class="ibu">
-								ALCOHOL<hr>BITTERNESS
+								BITTERNESS<hr>ALCOHOL
 							</th>
 						<?php } ?>
 						
@@ -159,7 +159,7 @@
 												$abv = ($beer['og'] - $beer['fg']) * 131;
 											?>
 										</div>
-										<h3> <?php echo number_format($abv, 1, '.', ',')."%"; ?> ABV </h3>
+										<h3> <?php echo $beer['ibu']; ?> IBU </h3>
 										
 										<div class="ibu-container">
 											<div class="ibu-indicator"><div class="ibu-full" style="height:<?php echo $beer['ibu'] > 100 ? 100 : $beer['ibu']; ?>%"></div></div>
@@ -172,7 +172,7 @@
 												*/
 											?>
 										</div>								
-										<h2><?php echo $beer['ibu']; ?> IBU</h2>
+										<h2> <?php echo number_format($abv, 1, '.', ',')."%"; ?> ABV </h2>
 									</td>
 								<?php } ?>
 							
