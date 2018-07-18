@@ -103,7 +103,7 @@
 						
 						<?php if($config[ConfigNames::ShowIbuCol]){ ?>
 							<th class="ibu">
-								BALANCE<hr>BITTERNESS
+								ALCOHOL<hr>BITTERNESS
 							</th>
 						<?php } ?>
 						
@@ -154,14 +154,7 @@
 								<?php if($config[ConfigNames::ShowIbuCol]){ ?>
 									<td class="ibu">
 										<h3>
-											<?php 
-												if( $beer['og'] > 1 ){
-													echo number_format((($beer['ibu'])/(($beer['og']-1)*1000)), 2, '.', '');
-												}else{
-													echo '0.00';
-												}
-											?> 
-											BU:GU
+											<?php echo number_format($abv, 1, '.', ',')."%"; ?> ABV
 										</h3>
 										
 										<div class="ibu-container">
