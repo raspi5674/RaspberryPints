@@ -153,9 +153,13 @@
 							
 								<?php if($config[ConfigNames::ShowIbuCol]){ ?>
 									<td class="ibu">
-										<h3>
-											<?php echo number_format($abv, 1, '.', ',')."%"; ?> ABV
-										</h3>
+										
+										<div class="abv">
+											<?php
+												$abv = ($beer['og'] - $beer['fg']) * 131;
+											?>
+										</div>
+										<h3> <?php echo number_format($abv, 1, '.', ',')."%"; ?> ABV </h3>
 										
 										<div class="ibu-container">
 											<div class="ibu-indicator"><div class="ibu-full" style="height:<?php echo $beer['ibu'] > 100 ? 100 : $beer['ibu']; ?>%"></div></div>
